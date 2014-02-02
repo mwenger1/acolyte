@@ -38,6 +38,21 @@
         color:#428BCA;
       }
 
+      .inlineInputs input{
+        width:45%;
+        display:inline;
+      }
+      .inlineInputs input:first-child {
+      margin-right:5px;
+      }
+      .form-group{
+        padding-bottom:15px;
+        border-bottom: 1px solid #EEE;
+      }
+      .lone-input-group{
+        margin-bottom: 15px;
+      }
+
     </style>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -80,10 +95,46 @@
         <div class="col-12 main">
           <h1 class="page-header">Quoting Form</h1>
 
-          <form>
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-          </form>
+        <form role="form">
+          <div class="form-group">
+            <label for="first_name">Name</label>
+            <div class="inlineInputs">
+              <input type="text" class="form-control " id="first_name" placeholder="First name">
+              <input type="email" class="form-control" id="last_name" placeholder="Last name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="agency">Job Info</label>
+            <div class="lone-input-group" >
+              <input type="text" class="form-control" id="agency" placeholder="Agency"></div>
+            <div class="lone-input-group">
+              <input type="text" class="form-control" id="job_name" placeholder="Job Name"></div>
+            <div class="lone-input-group">
+              <input type="text" class="form-control" id="job_location" placeholder="Job Location"></div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
 
           
         </div>
