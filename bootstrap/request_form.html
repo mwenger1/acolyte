@@ -54,6 +54,10 @@
       }
       body{padding-top: 0;}
 
+      select.form-control{
+        margin-bottom:1em;
+      }
+
 
 
     </style>
@@ -150,6 +154,52 @@
 
           </div>
 
+          <div class="form-group">
+            <label>Your Part Number</label>
+
+            <select class="form-control" disabled >
+              <option>RB</option>
+            </select>
+            <select class="form-control" >
+              <option>Select Waterproof</option>              
+              <option>65 - IP65</option>
+              <option>68 - IP68</option>
+              <option>Blank - None (IP40)</option>
+            </select>
+
+            <select class="form-control" >
+              <option>Select Voltage</option>              
+              <option>12 - 12V</option>
+              <option>24 - 24V</option>
+            </select>
+
+            <select class="form-control" >
+              <option>Select Wattage</option>              
+              <option>1.5</option>
+              <option>2.2</option>
+              <option>3.0</option>
+              <option>4.4</option>
+              <option>5.0</option>
+              <option>6.0</option>
+              <option>8.8</option>
+            </select>
+
+            <select class="form-control" >
+              <option>Select Color Temp</option>              
+              <option>2400k</option>
+              <option>2700k</option>
+              <option>3000k</option>
+              <option>3500k</option>
+              <option>4100k</option>
+              <option>6000k</option>
+              <option>VW - 2400-6500</option>
+              <option>VWA - 1800-6500</option>
+              <option>VWR - 1800-6500</option>
+              <option>RGB</option>
+              <option>RGBW</option>
+              <option>RGBA</option>
+            </select>
+          </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
