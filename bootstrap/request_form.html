@@ -53,6 +53,7 @@
         margin-bottom: 15px;
       }
 
+
     </style>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -113,7 +114,7 @@
             <div class="lone-input-group">
               <input type="text" class="form-control" id="job_location" placeholder="Job Location"></div>
             <div class="lone-input-group">
-              <input type="text" class="form-control" id="job_location" placeholder="Job Location"></div>
+              <input type="text" class="form-control" id="job_location" placeholder="Bid Date"></div>
             <div class="lone-input-group">
               <input type="text" class="form-control" id="job_location" placeholder="Distributor"></div>
             <div class="lone-input-group">
@@ -121,7 +122,31 @@
             <div class="lone-input-group">
               <input type="text" class="form-control" id="job_location" placeholder="Specifier Location"></div>
           </div>
+          
+          <div class="form-group">
+            <label for="agency">Register this Spec?</label>
 
+            <label class="checkbox-inline" for="registerYes" style="margin-right:5px;">
+              <input type="radio" id="registerYes" name="registerSpec" value="option1"> Yes
+            </label>
+            <label class="checkbox-inline" for="registerNo" >
+              <input type="radio" id="registerNo" name="registerSpec" value="option2"> No
+            </label>
+
+          </div>
+
+          <div class="form-group">
+            <label for="agency">Type of Quote?</label>
+
+            <label class="checkbox-inline" for="quoteTypeFirm" style="margin-right:5px;">
+              <input type="radio" id="quoteTypeFirm" name="quoteTypeSpec" value="option1"> Firm
+            </label>
+            <label class="checkbox-inline" for="quoteTypeBudget" >
+              <input type="radio" id="quoteTypeBudget" name="quoteTypeSpec" value="option2"> Budget
+            </label>
+
+
+          </div>
 
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
